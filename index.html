@@ -204,9 +204,7 @@
           >
             <h3 class="box-description__title">Жильё</h3>
             <p class="box-description__text">
-              Рекомендуем пожить <br />
-              в настоящем мотеле, <br />
-              всё как в кино!
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li
@@ -214,9 +212,7 @@
           >
             <h3 class="box-description__title">Еда</h3>
             <p class="box-description__text">
-              Всегда заказывайте <br />
-              топовый фирменный бургер, <br />
-              вы не разочаруетесь!
+              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li
@@ -224,9 +220,7 @@
           >
             <h3 class="box-description__title">Сувениры</h3>
             <p class="box-description__text">
-              Не только китайского, <br />
-              но и настоящего местного <br />
-              производства!
+              Не только китайского, но и настоящего местного производства!
             </p>
           </li>
         </ul>
@@ -436,5 +430,138 @@
       <!-- developed end -->
     </footer>
     <!-- footer end -->
+
+    <!-- modal start -->
+    <div class="modal">
+      <!-- modal--active для открытие модального окна -->
+      <div class="modal__inner">
+        <section class="modal__section">
+          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <button class="modal__button-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form
+            class="modal__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <div class="modal__block modal__block--date">
+              <fieldset class="modal__field modal__field--date">
+                <label class="modal__label" for="date-arrival"
+                  >Дата Заезда:</label
+                >
+                <input
+                  class="modal__input"
+                  id="date-arrival"
+                  name="modal-date-arrival"
+                  type="text"
+                  placeholder="27 апреля 2020"
+                />
+                <span class="modal__text modal__text--arrival"
+                  >Мы не можем отправить вас в прошлое.</span
+                >
+              </fieldset>
+              <fieldset class="modal__field modal__field--date">
+                <label class="modal__label" for="date-departure"
+                  >Дата Выезда:</label
+                >
+                <input
+                  class="modal__input"
+                  id="date-departure"
+                  name="modal-date-departure"
+                  type="text"
+                  placeholder="1 сентября 2023"
+                />
+                <span class="modal__text modal__text--departure"
+                  >На эти даты есть свободные номера. Пока есть.</span
+                >
+              </fieldset>
+            </div>
+            <div class="modal__block modal__block--people">
+              <fieldset class="modal__field modal__field--people">
+                <label class="modal__label">Взрослые:</label>
+                <div class="modal__block-number">
+                  <button
+                    class="modal__button-number modal__button-number--minus"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Уменьшите количество посетителей</span
+                    >
+                  </button>
+                  <span class="modal__number">2</span>
+                  <button
+                    class="modal__button-number modal__button-number--plus"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Увеличить количество посетителей</span
+                    >
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset class="modal__field modal__field--people">
+                <div class="modal__info">
+                  <label class="modal__label">Дети:</label>
+                  <span class="modal__info-tooltip">
+                    <button
+                      class="modal__info-button"
+                      type="button"
+                      aria-labelledby="tooltip-label-date"
+                    >
+                      <svg
+                        class="modal__info-icon"
+                        width="26"
+                        height="26"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <span
+                      class="modal__info-text"
+                      id="tooltip-label-date"
+                      role="tooltip"
+                      >Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span
+                    >
+                  </span>
+                </div>
+                <div class="modal__block-number">
+                  <button
+                    class="modal__button-number modal__button-number--minus"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Уменьшите количество посетителей</span
+                    >
+                  </button>
+                  <span class="modal__number">2</span>
+                  <button
+                    class="modal__button-number modal__button-number--plus"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Увеличить количество посетителей</span
+                    >
+                  </button>
+                </div>
+              </fieldset>
+            </div>
+            <button class="rectangle modal__submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!-- modal end -->
   </body>
 </html>
