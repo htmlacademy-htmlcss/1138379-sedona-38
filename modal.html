@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <style>
-      .loaded {
-        opacity: 1;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Описание контента" />
     <meta name="keywords" content="Ключевые, слова, через, запятую" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Седона | Модальное окно</title>
   </head>
@@ -40,6 +35,7 @@
                   name="modal-date-arrival"
                   type="text"
                   placeholder="Укажите дату"
+                  required
                 />
                 <span class="modal__text modal__text--disabled"
                   >Мы не можем отправить вас в прошлое.</span
@@ -55,6 +51,7 @@
                   name="modal-date-departure"
                   type="text"
                   placeholder="Укажите дату"
+                  required
                 />
                 <span class="modal__text modal__text--departure"
                   >На эти даты есть свободные номера. Пока есть.</span
@@ -63,7 +60,7 @@
             </div>
             <div class="modal__block modal__block--people">
               <fieldset class="modal__field modal__field--people">
-                <label class="modal__label">Взрослые:</label>
+                <label class="modal__label" for="adults">Взрослые:</label>
                 <div class="modal__block-number">
                   <button
                     class="modal__button-number modal__button-number--minus"
@@ -75,9 +72,11 @@
                   </button>
                   <input
                     class="modal__number"
+                    id="adults"
                     name="modal-number"
                     type="number"
                     placeholder="2"
+                    required
                   />
                   <button
                     class="modal__button-number modal__button-number--plus"
@@ -91,7 +90,7 @@
               </fieldset>
               <fieldset class="modal__field modal__field--people">
                 <div class="modal__info">
-                  <label class="modal__label">Дети:</label>
+                  <label class="modal__label" for="children">Дети:</label>
                   <span class="modal__info-tooltip">
                     <button
                       class="modal__info-button"
@@ -136,9 +135,11 @@
                   </button>
                   <input
                     class="modal__number"
+                    id="children"
                     name="modal-number"
                     type="number"
                     placeholder="2"
+                    required
                   />
                   <button
                     class="modal__button-number modal__button-number--plus"
@@ -151,9 +152,7 @@
                 </div>
               </fieldset>
             </div>
-            <button class="modal__submit rectangle" type="submit">
-              <span class="modal__submit-text">Найти</span>
-            </button>
+            <button class="modal__submit rectangle" type="submit">Найти</button>
           </form>
         </section>
       </div>
