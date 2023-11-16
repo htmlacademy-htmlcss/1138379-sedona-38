@@ -6,11 +6,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Описание контента" />
     <meta name="keywords" content="Ключевые, слова, через, запятую" />
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="images/favicon.png"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Седона | Модальное окно</title>
+    <style>
+      .perfect-pixel {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+
+        display: none;
+        max-width: none;
+        margin-right: auto;
+        margin-left: auto;
+
+        opacity: 0.3;
+      }
+    </style>
   </head>
   <body class="container page">
+    <picture>
+      <img
+        class="perfect-pixel"
+        src="public/images/unnamed.png"
+      />
+    </picture>
     <!-- modal start -->
     <div class="modal">
       <div class="modal__inner">
